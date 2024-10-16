@@ -56,6 +56,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     // Loop over all pixels
     for (int i = 0; i < height; i++)
     {
+        // only need to swap the first half of the pixels with the second half, hence divide width by 2
         for (int j = 0; j < width / 2; j++)
         {
             // Swap pixels
